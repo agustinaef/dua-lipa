@@ -262,10 +262,11 @@ input[type=radio] {
 .song {
     font-family: 'Fjalla One', sans-serif;
     font-size: 60px;
-    color: #e7be81;
+    color: #ecd0a4;
     bottom: 0;
     width: 100%;
     text-align:left;
+    -webkit-text-stroke: 1px #ca974a;
 }
 
 .tour {
