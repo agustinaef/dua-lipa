@@ -43,7 +43,7 @@ html{
     color:#e7be81;
     font-family: 'Yellowtail', cursive;
     font-size: 6em;
-    margin-bottom: 40px;
+    margin-block: 25px;
     text-align: center;
 }
 
@@ -82,8 +82,8 @@ li {
     text-decoration: none;
     color:#e7be81;
     justify-items: center;
-    margin-inline: 40px;
     font-size: 3rem;
+    margin-inline: 40px;
 }
 
 
@@ -95,7 +95,7 @@ li {
 .media {
     display: flex;
     justify-content:center ;
-    width: 100;
+    width: 100%;
     height: 100%;
     border: 2px solid #e7be81;
     background-color: black;
@@ -120,6 +120,12 @@ li {
     height: 315px;
 }
 
+.carousel-item > img{
+    object-fit: cover;
+    height: auto;
+    min-height: 500px;
+}
+
 
 .form_container{
     display: flex;
@@ -136,10 +142,10 @@ li {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 80%;
+    width: 92%;
     height:auto;
     gap: 50px;
-    padding: 100px;
+    padding: 110px;
     margin-block: 50px;
     background-color: transparent;
     color: #e7be81;
@@ -155,8 +161,8 @@ li {
 
 
 .form_item > select{
-    height: 5rem;
-    width: 25rem;
+    height: 4rem;
+    width: 90%;
     border-radius: 6px;
     border: 2px solid #f8e5c1;
 }
@@ -164,17 +170,16 @@ li {
 
 input{
     border-radius: 6px;
-    height: 10rem;
-    width: 25rem;
+    height: 4rem;
+    width: 90%;
     border: 2px solid #f8e5c1;
 }
 
 
 input[type=radio] {
-    height: 1rem;
+    height: auto;
     width: auto;
 }
-
 
 .form_song{
     display: flex;
@@ -183,7 +188,10 @@ input[type=radio] {
 
 
 .choose_text{
-    font-size: 1rem;
+    font-size: 1.6rem;
+    display: inline;
+    margin-inline: 20px;
+    font-style: italic;
 }
 
 
@@ -196,14 +204,20 @@ input[type=radio] {
 
 
 .form_btn > input{
-    background: linear-gradient(180deg, #e7be81 0%, #fce4b7 100%);
+    background: linear-gradient(0deg, #e7be81 0%, #fce4b7 100%);
     font-weight: 500;
     color: #000000;
-    font-size: 1rem;
-    height: 5rem;
+    font-size: 1.5rem;
+    height: 4rem;
     border: none;
+    width: 25%;
+    margin: 20px;
 }
 
+.form_btn > input:hover{
+    color: #b1700e;
+    transition: 0.1s;
+}
 
 .footer {
     color: #e7be81;
@@ -248,7 +262,6 @@ input[type=radio] {
     border: 2px solid #e7be81;
     background-image: url(../Imagenes/background.webp);
     text-align: center;
-    margin-block: 50px;
 }
 
 
@@ -351,6 +364,11 @@ input[type=radio] {
     text-shadow: 3px 3px #ffffff;
 }
 
+.nav-link{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 20px 30px 0 0;
+}
 
 /* media queries tablet */
 
@@ -382,22 +400,31 @@ input[type=radio] {
         width: auto;
         font-size: 3rem;
         text-align: center;
+        margin: 1rem;
     }
 
     .links {
         flex-wrap: wrap;
         align-items: center;
         width: auto;
+        margin-top: 20px;
         
     }
 
     .link{
         font-size: 2rem;
+        margin: 20px;
     }
     
     .media {
         flex-direction: column;
         align-items: center;
+        margin-top: 35px;
+    }
+
+    .carousel-item > img{
+        object-fit: cover;
+        height: 550px;
     }
 
     .merch_text {
@@ -467,12 +494,13 @@ input[type=radio] {
      .form_btn{
          width: 80%;
          height: 2rem;
-         margin-block: 1rem;
+         margin-block: 2rem;
      }
 
      .form_btn > input{
         width: 50%;
         height: auto;
+        font-size: 1rem;
     }
 
      .form_item > input, 
@@ -490,6 +518,12 @@ input[type=radio] {
      .footer{
          flex-wrap: wrap;
          overflow: hidden;
+     }
+
+     .nav-link{
+         font-weight: 700;
+         font-size: 1.4rem;
+         margin: 20px 10px 0 0;
      }
 }
        
@@ -509,7 +543,8 @@ input[type=radio] {
     .title{
         margin: 0;
         padding: 0;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin: 10px;
     }
 
     .links{
@@ -518,6 +553,11 @@ input[type=radio] {
         padding: 0;
         margin: 0;
         width: 100%;
+    }
+
+    .carousel-item > img{
+        object-fit: cover;
+        height: 650px;
     }
 
     .card {
@@ -559,4 +599,9 @@ input[type=radio] {
         font-size: 0.9rem;
     }
 
+    .nav-link{
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin: 20px 10px 0 0;
+    }
   }
